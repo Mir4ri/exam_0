@@ -1,3 +1,7 @@
+body {
+    // font-size: 16px;
+}
+
 .about {
     color: #FFF;
     font-family: 'Josefin Sans', serif;
@@ -33,15 +37,12 @@
     }
     .about_hz {
         background-image: url('../img/about.jpg');
-        height: 100%;
         background-size: 100% 100%;
         background-attachment: fixed;  
         padding: 100px;
-        // display: flex;
-        // justify-content: space-around;
-        // .split {
-        //     width: 50%;
-        // }
+        .split {
+            width: 50%;
+        }
         .about__text {
             
             .about__text__title {
@@ -77,6 +78,7 @@
     background: $dark;
     color: #FFF;
     padding: 60px;
+    font-family: 'Josefin Sans', serif;
     .container-flex {
         display: flex;
         justify-content: space-between;
@@ -93,3 +95,85 @@
     }
 }
 
+.location {
+    font-family: 'Josefin Sans', serif;
+    @mixin about {
+        height: 100%;
+        background-size: 100% 100%;
+        color: #FFF;
+        .location__spain__text--left {
+            position: relative;
+            left: 50%;
+        }
+        .location__spain__text {
+            width: 540px;
+            background: rgba(51, 51, 51, .5);
+            padding: 30px 10px;
+            .location__text__countr {
+                margin: 0;
+            }
+            .location__text__title {
+                margin: 20px 0;
+            }
+        }
+        .location__button {
+            background: $blue;
+            border: 2px solid transparent;
+            text-transform: uppercase;
+            padding: 1em 3em;
+            transition: all .5s ease;
+            &:hover {
+                background: transparent;    
+                border: 2px solid $blue;
+            }
+        }
+        padding: 209px 0 120px 0;
+    }
+    .location__spain-house {
+        background-image: url('../img/location_1.jpg');
+        @include about;
+    }
+    .location__spain-mount {
+        background-image: url('../img/location_2.jpg');
+        @include about; 
+        
+    }
+}
+
+.tourist {
+    font-family: 'Josefin Sans', serif;
+    background-image: url('../img/tourist-bg.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    .tourist__wrapper {
+        color: #FFF;
+        padding: 122px 0 200px 0;
+        .tourist__title {
+            margin: 0;
+            margin-bottom: 100px;
+            text-align: center;
+        }
+        .response {
+            display:flex;
+            .response__text {
+                padding: 40px 30px;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                background: $dark;
+                .response__text__name {
+                    margin: 0;
+                    font-size: 20px;
+                }
+                .response__text__item::before {
+                    content: "“";
+                    font-size: 2em;
+                    font-weight: 300;
+                    margin-right: 5px;
+                    color: $blue;
+                }
+            }
+            
+        }
+    }
+}
