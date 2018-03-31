@@ -1,0 +1,38 @@
+.about {
+    color: #FFF;
+    font-family: 'Josefin Sans', serif;
+    .about__header {
+        background: $blue;
+        text-transform: uppercase;
+        padding: 25px;
+        .container-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .about__header__logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .about__header__list {
+            padding: 0;
+            font-size: 0;
+            .about__header__list__item {
+                display: inline-block;
+                font-size: 14px;
+                list-style: none;
+                padding: 0 5px;
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+    .about__text {
+        background: url('../img/about.jpg');
+        height: 100%;
+        background-size: 100% 100%;
+    }
+}

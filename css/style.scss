@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700'); 
+@import './components/_variables.scss';
+@import './components/_header.scss';
+@import './components/_general.scss';
+@import'./components/_footer.scss';
+@import './normalize.css';
+
+body,html,header {
+    height: 100%;
+}
+.ba-container {
+    height: 100%;
+    margin: 5px;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
