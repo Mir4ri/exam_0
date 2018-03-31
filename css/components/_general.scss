@@ -22,17 +22,74 @@
                 font-size: 14px;
                 list-style: none;
                 padding: 0 5px;
+                transition: all .5s ease;
                 &:hover {
-                    text-decoration: underline;
+                    color: darken($blue, 30%);
                     cursor: pointer;
                 }
             }
 
         }
     }
-    .about__text {
-        background: url('../img/about.jpg');
+    .about_hz {
+        background-image: url('../img/about.jpg');
         height: 100%;
         background-size: 100% 100%;
+        background-attachment: fixed;  
+        padding: 100px;
+        // display: flex;
+        // justify-content: space-around;
+        // .split {
+        //     width: 50%;
+        // }
+        .about__text {
+            
+            .about__text__title {
+                margin: 0;
+                font-size: 36px;
+            }
+            .about__text__p1 {
+                font-size: 16px;
+            }
+            .about__text__p2 {
+                font-size: 16px;
+
+            }
+                
+            .about__text__button {
+                border: none;
+                background: $blue;
+                text-transform: uppercase;
+                padding: 0.8em 1.5em;
+                border: 2px solid transparent;
+                transition: all .5s ease;
+                &:hover {
+                    background: transparent;
+                    border: 2px solid $blue;
+                    cursor: pointer;
+                }
+            }
+        }
     }
 }
+
+.how-works {
+    background: $dark;
+    color: #FFF;
+    padding: 60px;
+    .container-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .how-works__mark {
+            display: grid;
+            justify-items: center;
+            span {
+                font-family: 'Aleo';
+                font-size: 36px;
+            }
+        }
+        
+    }
+}
+
