@@ -40,8 +40,16 @@ body {
         background-size: 100% 100%;
         background-attachment: fixed;  
         padding: 100px;
+        display: flex;
         .split {
             width: 50%;
+        }
+        .about__img__item {
+            position: relative;
+            left: 0;
+        }
+        .about__img__item:first-child {
+            left: 25%;
         }
         .about__text {
             

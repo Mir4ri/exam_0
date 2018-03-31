@@ -85,9 +85,15 @@
     background-image: url("../img/about.jpg");
     background-size: 100% 100%;
     background-attachment: fixed;
-    padding: 100px; }
+    padding: 100px;
+    display: flex; }
     .about .about_hz .split {
       width: 50%; }
+    .about .about_hz .about__img__item {
+      position: relative;
+      left: 0; }
+    .about .about_hz .about__img__item:first-child {
+      left: 25%; }
     .about .about_hz .about__text .about__text__title {
       margin: 0;
       font-size: 36px; }
