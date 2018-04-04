@@ -34,7 +34,7 @@
         padding: 1em 0;
         color: #303030;
         border: 2px solid transparent;
-        transition: all .6s ease-in-out; }
+        transition: all .4s ease-in-out; }
         .header .hero .header__search .header__search__input:focus {
           border: 2px solid #5474fd; }
         .header .hero .header__search .header__search__input:focus::-webkit-input-placeholder {
@@ -91,9 +91,9 @@
       width: 50%; }
     .about .about_hz .about__img__item {
       position: relative;
-      left: 0; }
-    .about .about_hz .about__img__item:first-child {
       left: 25%; }
+    .about .about_hz .about__img__item:first-child {
+      left: 0; }
     .about .about_hz .about__text .about__text__title {
       margin: 0;
       font-size: 36px; }
